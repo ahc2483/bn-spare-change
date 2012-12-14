@@ -13,8 +13,6 @@ function ApplicationWindow() {
 		var AddCardView;
 		var ChooseCharityView;
 		
-		self.add(LoginView);
-		
 		Ti.API.addEventListener('LoggedIn', function(e){
 			self.remove(LoginView);
 			
@@ -30,6 +28,12 @@ function ApplicationWindow() {
 			ChooseCharityView = new ChooseCharity();
 			self.add(ChooseCharityView);
 		});
+		
+		self.add(LoginView);
+		
+		if(Ti.Facebook.getLoggedIn()) {
+			Ti.API.fireEvent('LoggedIn');
+		}
 	
 	}
 	else{
