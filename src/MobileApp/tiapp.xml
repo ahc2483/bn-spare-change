@@ -7,7 +7,7 @@
         <target device="android">false</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>2.1.3.GA</sdk-version>
+    <sdk-version>2.1.4.GA</sdk-version>
     <id>brandnetworks.sparechange</id>
     <name>SpareChangeMobile</name>
     <version>1.0</version>
@@ -35,6 +35,7 @@
             <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
+        <property name="ti.facebook.appid">498029910219578</property >
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>
     <mobileweb>
