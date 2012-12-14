@@ -1,11 +1,12 @@
 function Login() {
 	var self = Ti.UI.createView();
 	
-	Ti.Facebook.appid = '498029910219578';
-	Ti.Facebook.permissions = ['publish_stream'];
+	Ti.Facebook.appid = SpareChange.Settings.FacebookAppId;
+	Ti.Facebook.permissions = SpareChange.Settings.FacebookPermissions;
+	
 	Ti.Facebook.addEventListener('login', function(e) {
 	    if (e.success) {
-	        alert('Logged in');
+	        Ti.API.fireEvent('LoggedIn');
 	    }
 	});
 	

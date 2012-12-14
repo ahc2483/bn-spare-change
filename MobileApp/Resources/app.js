@@ -9,10 +9,6 @@
  *  
  */
 
-var SpareChange = {};
-SpareChange.UI = require('ui/common/ViewExtensions');
-SpareChange.Settings = require('/settings');
-
 //bootstrap and check dependencies
 if (Ti.version < 1.8 ) {
 	alert('Sorry - this application template requires Titanium Mobile SDK 1.8 or later');	  	
@@ -31,8 +27,6 @@ if (Ti.version < 1.8 ) {
 	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 899 || height > 899));
 	
 	var Window;
-	//Window = require('ui/common/Login');
-	
 	if (isTablet) {
 		Window = require('ui/tablet/ApplicationWindow');
 	}
@@ -46,6 +40,5 @@ if (Ti.version < 1.8 ) {
 			Window = require('ui/handheld/ApplicationWindow');
 		}
 	}
-	
 	new Window().open();
 })();

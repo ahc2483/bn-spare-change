@@ -1,0 +1,3 @@
+Logfile initialized
+[INFO] logfile = /Users/ahc2483/Development/Git/bn-spare-change/src/MobileApp/build.log
+[DEBUG] /Users/ahc2483/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py simulator SpareChangeMobile /android/sdk /Users/ahc2483/Development/Git/bn-spare-change/src/MobileApp brandnetworks.sparechange 2 WXGA /127.0.0.1:62780
